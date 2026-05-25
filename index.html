@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Abdulrahman Saheed, a full-stack developer in Abuja building fast, functional web products with React, Supabase, and Paystack."
+  />
   <title>Abdulrahman Saheed | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  >
+  />
   <script src="scripts.js" defer></script>
 </head>
 
@@ -18,14 +22,21 @@
     <div class="nav-container">
       <a href="#home" class="logo">Abdulrahman Saheed</a>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#home" class="active" aria-current="page">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -34,299 +45,301 @@
     </div>
   </nav>
 
-  <section class="hero" id="home">
-    <div class="hero-bg-shape shape-one"></div>
-    <div class="hero-bg-shape shape-two"></div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-shape shape-one" aria-hidden="true"></div>
+      <div class="hero-bg-shape shape-two" aria-hidden="true"></div>
 
-    <div class="hero-content">
-      <p class="hero-label">Full-Stack Developer — Abuja, Nigeria</p>
+      <div class="hero-content">
+        <p class="hero-label">Full-Stack Developer - Abuja, Nigeria</p>
 
-      <h1>I Build Things That Work.</h1>
+        <h1>I Build Things That Work.</h1>
 
-      <p class="hero-subtext">
-        React, Supabase, Paystack. I turn ideas into real, functional web products.
-        Available for freelance and full-time work.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="hero-btn primary-btn">See My Work</a>
-        <a href="#contact" class="hero-btn secondary-btn">Let's Talk</a>
-      </div>
-
-      <div class="hero-socials">
-        <a href="https://wa.me/2348142857377" target="_blank" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.52 3.48A11.77 11.77 0 0 0 12.12 0C5.54 0 .18 5.35.18 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.91 11.91 0 0 0 5.87 1.5h.01c6.58 0 11.94-5.35 11.94-11.94 0-3.18-1.24-6.18-3.55-8.44ZM12.13 21.84h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.23-.37a9.9 9.9 0 0 1-1.52-5.29c0-5.47 4.45-9.92 9.93-9.92a9.86 9.86 0 0 1 7.02 2.91 9.87 9.87 0 0 1 2.91 7.01c0 5.47-4.45 9.92-9.98 9.92Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-          </svg>
-        </a>
-
-        <a href="mailto:rahmvn1@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-          </svg>
-        </a>
-
-        <a href="https://x.com/RahmvnDev" target="_blank" aria-label="X">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M18.9 2H22l-6.8 7.78L23.2 22h-6.27l-4.9-6.4L6.4 22H3.3l7.28-8.32L2.9 2h6.43l4.43 5.86L18.9 2Zm-1.1 17.85h1.72L8.38 4.04H6.54l11.26 15.81Z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="about-container">
-      <div class="about-text">
-        <p class="section-label">About Me</p>
-
-        <h2>A Developer Who Ships</h2>
-
-        <p>
-          I'm Abdulrahman Saheed, a full-stack developer based in Abuja, Nigeria.
-          I hold a frontend development certificate and have been building real
-          products ever since. When job applications led nowhere, I stopped waiting
-          and started creating. No team, no shortcuts, just consistent work and a
-          drive to ship things that actually function. I use AI to move fast but
-          every line of code is reviewed, tested and understood. I don't just write
-          code, I solve problems.
+        <p class="hero-subtext">
+          React, Supabase, Paystack. I turn ideas into real, functional web products.
+          Available for freelance and full-time work.
         </p>
-      </div>
 
-      <div class="about-divider"></div>
+        <div class="hero-buttons">
+          <a href="#projects" class="hero-btn primary-btn">See My Work</a>
+          <a href="#contact" class="hero-btn secondary-btn">Let's Talk</a>
+        </div>
 
-      <div class="about-skills">
-        <p class="section-label">My Stack</p>
+        <div class="hero-socials">
+          <a href="https://wa.me/2348142857377" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.52 3.48A11.77 11.77 0 0 0 12.12 0C5.54 0 .18 5.35.18 11.94c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.91 11.91 0 0 0 5.87 1.5h.01c6.58 0 11.94-5.35 11.94-11.94 0-3.18-1.24-6.18-3.55-8.44ZM12.13 21.84h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.23-.37a9.9 9.9 0 0 1-1.52-5.29c0-5.47 4.45-9.92 9.93-9.92a9.86 9.86 0 0 1 7.02 2.91 9.87 9.87 0 0 1 2.91 7.01c0 5.47-4.45 9.92-9.98 9.92Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+            </svg>
+          </a>
 
-        <div class="skills-grid">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Supabase</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">HTML &amp; CSS</span>
-          <span class="skill-tag">Paystack</span>
-          <span class="skill-tag">Git &amp; GitHub</span>
+          <a href="mailto:rahmvn1@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" />
+            </svg>
+          </a>
+
+          <a href="https://x.com/RahmvnDev" target="_blank" rel="noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.9 2H22l-6.8 7.78L23.2 22h-6.27l-4.9-6.4L6.4 22H3.3l7.28-8.32L2.9 2h6.43l4.43 5.86L18.9 2Zm-1.1 17.85h1.72L8.38 4.04H6.54l11.26 15.81Z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services" id="services">
-    <div class="services-container">
-      <div class="services-header">
-        <p class="section-label">What I Do</p>
-        <h2>Services</h2>
-      </div>
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <p class="section-label">About Me</p>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-globe"></i>
-          </div>
-          <h3>Business Websites</h3>
+          <h2>A Developer Who Ships</h2>
+
           <p>
-            Clean, mobile responsive websites for hotels, restaurants, schools
-            and local businesses. Built to impress and convert.
+            I'm Abdulrahman Saheed, a full-stack developer based in Abuja, Nigeria.
+            I hold a frontend development certificate and have been building real
+            products ever since. When job applications led nowhere, I stopped waiting
+            and started creating. No team, no shortcuts, just consistent work and a
+            drive to ship things that actually function. I use AI to move fast but
+            every line of code is reviewed, tested and understood. I don't just write
+            code, I solve problems.
           </p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <h3>Web App Development</h3>
-          <p>
-            Full-stack web applications with authentication, database, payments
-            and real-time features. From idea to live product.
-          </p>
-        </div>
+        <div class="about-divider" aria-hidden="true"></div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-rocket"></i>
-          </div>
-          <h3>MVP Development</h3>
-          <p>
-            Got a startup idea? I'll build your minimum viable product fast so
-            you can test, validate and launch.
-          </p>
-        </div>
+        <div class="about-skills">
+          <p class="section-label">My Stack</p>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-laptop"></i>
+          <div class="skills-grid">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML &amp; CSS</span>
+            <span class="skill-tag">Paystack</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
           </div>
-          <h3>Demo &amp; Pitch Sites</h3>
-          <p>
-            Need to pitch an idea or win a client? I build convincing demo sites
-            that look and feel like the real thing.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-lightbulb"></i>
-          </div>
-          <h3>Product Thinking</h3>
-          <p>
-            I don't just build what you ask, I think through your idea deeply.
-            Structure, user flow, edge cases, and what actually makes sense to build.
-          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects" id="projects">
-    <div class="projects-container">
-      <div class="projects-header">
-        <p class="section-label">My Work</p>
-        <h2>Projects</h2>
-      </div>
+    <section class="services" id="services">
+      <div class="services-container">
+        <div class="services-header">
+          <p class="section-label">What I Do</p>
+          <h2>Services</h2>
+        </div>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image-placeholder">
-            <img src="img/mafdesh-ss.png" alt="Mafdesh project screenshot">
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>Mafdesh</h3>
-              <span class="project-category">Web App</span>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-globe"></i>
             </div>
-
-            <p class="project-description">
-              A full-stack campus marketplace built with React and Supabase.
-              Features authentication, real-time listings, and Paystack payment
-              integration. Stress tested and secured. Currently in demo stage,
-              full launch coming soon.
+            <h3>Business Websites</h3>
+            <p>
+              Clean, mobile responsive websites for hotels, restaurants, schools
+              and local businesses. Built to impress and convert.
             </p>
+          </div>
 
-            <div class="project-tags">
-              <span>React</span>
-              <span>Supabase</span>
-              <span>PostgreSQL</span>
-              <span>Paystack</span>
-              <span>Tailwind</span>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Web App Development</h3>
+            <p>
+              Full-stack web applications with authentication, database, payments
+              and real-time features. From idea to live product.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>MVP Development</h3>
+            <p>
+              Got a startup idea? I'll build your minimum viable product fast so
+              you can test, validate and launch.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-laptop"></i>
+            </div>
+            <h3>Demo &amp; Pitch Sites</h3>
+            <p>
+              Need to pitch an idea or win a client? I build convincing demo sites
+              that look and feel like the real thing.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Product Thinking</h3>
+            <p>
+              I don't just build what you ask, I think through your idea deeply.
+              Structure, user flow, edge cases, and what actually makes sense to build.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <div class="projects-header">
+          <p class="section-label">My Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image-placeholder">
+              <img src="img/mafdesh-ss.png" alt="Mafdesh project screenshot" />
             </div>
 
-            <a href="https://mafdesh.vercel.app" target="_blank" class="project-btn">
-              View Demo
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3>Mafdesh</h3>
+                <span class="project-category">Web App</span>
+              </div>
+
+              <p class="project-description">
+                A full-stack campus marketplace built with React and Supabase.
+                Features authentication, real-time listings, and Paystack payment
+                integration. Stress tested and secured. Currently in demo stage,
+                full launch coming soon.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>Paystack</span>
+                <span>Tailwind</span>
+              </div>
+
+              <a href="https://mafdesh.vercel.app" target="_blank" rel="noreferrer" class="project-btn">
+                View Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image-placeholder">
+              <img src="img/almuflihoon.png" alt="Al-Muflihoon International School website screenshot" />
+            </div>
+
+            <div class="project-content">
+              <div class="project-title-row">
+                <h3>Al-Muflihoon International School</h3>
+                <span class="project-category">Business Website</span>
+              </div>
+
+              <p class="project-description">
+                A clean, mobile responsive 4-page website built for an Islamic
+                school in Abuja. Includes admissions info, programs, contact form
+                and WhatsApp integration.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Formspree</span>
+              </div>
+
+              <a href="https://almuflihoon-demo.netlify.app" target="_blank" rel="noreferrer" class="project-btn">
+                View Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <p class="section-label">Get In Touch</p>
+          <h2>Let's Work Together</h2>
+          <p>
+            Have a project in mind or need a developer? Reach out - I respond fast.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-details">
+            <a href="https://wa.me/2348142857377" target="_blank" rel="noreferrer" class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <span>WhatsApp</span>
+                <p>08142857377</p>
+              </div>
+            </a>
+
+            <a href="mailto:rahmvn1@gmail.com" class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <p>rahmvn1@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://x.com/RahmvnDev" target="_blank" rel="noreferrer" class="contact-item">
+              <i class="fa-brands fa-x-twitter"></i>
+              <div>
+                <span>X</span>
+                <p>x.com/RahmvnDev</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/2348142857377" target="_blank" rel="noreferrer" class="contact-whatsapp-btn">
+              Chat on WhatsApp
             </a>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-image-placeholder">
-            <img src="img/almuflihoon.png" alt="Al-Muflihoon International School website screenshot">
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>Al-Muflihoon International School</h3>
-              <span class="project-category">Business Website</span>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xpqnylde"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
             </div>
 
-            <p class="project-description">
-              A clean, mobile responsive 4-page website built for an Islamic
-              school in Abuja. Includes admissions info, programs, contact form
-              and WhatsApp integration.
-            </p>
-
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Formspree</span>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
             </div>
 
-            <a href="https://almuflihoon-demo.netlify.app" target="_blank" class="project-btn">
-              View Demo
-            </a>
-          </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit-btn">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <div class="contact-header">
-        <p class="section-label">Get In Touch</p>
-        <h2>Let's Work Together</h2>
-        <p>
-          Have a project in mind or need a developer? Reach out — I respond fast.
-        </p>
-      </div>
-
-      <div class="contact-content">
-        <div class="contact-details">
-          <a href="https://wa.me/2348142857377" target="_blank" class="contact-item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <div>
-              <span>WhatsApp</span>
-              <p>08142857377</p>
-            </div>
-          </a>
-
-          <a href="mailto:rahmvn1@gmail.com" class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <span>Email</span>
-              <p>rahmvn1@gmail.com</p>
-            </div>
-          </a>
-
-          <a href="https://x.com/RahmvnDev" target="_blank" class="contact-item">
-            <i class="fa-brands fa-x-twitter"></i>
-            <div>
-              <span>X</span>
-              <p>x.com/RahmvnDev</p>
-            </div>
-          </a>
-
-          <a href="https://wa.me/2348142857377" target="_blank" class="contact-whatsapp-btn">
-            Chat on WhatsApp
-          </a>
-        </div>
-
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xpqnylde"
-          method="POST"
-        >
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
-          </div>
-
-          <button type="submit" class="contact-submit-btn">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-container">
       <h2>Abdulrahman Saheed</h2>
-      <p>Full-Stack Developer — Abuja, Nigeria</p>
+      <p>Full-Stack Developer - Abuja, Nigeria</p>
 
       <div class="footer-socials">
-        <a href="https://wa.me/2348142857377" target="_blank" aria-label="WhatsApp">
+        <a href="https://wa.me/2348142857377" target="_blank" rel="noreferrer" aria-label="WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
 
@@ -334,7 +347,7 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
 
-        <a href="https://x.com/RahmvnDev" target="_blank" aria-label="X">
+        <a href="https://x.com/RahmvnDev" target="_blank" rel="noreferrer" aria-label="X">
           <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
@@ -342,7 +355,7 @@
       <div class="footer-divider"></div>
 
       <p class="footer-copy">
-        © 2025 Abdulrahman Saheed. All rights reserved.
+        &copy; <span id="currentYear">2026</span> Abdulrahman Saheed. All rights reserved.
       </p>
     </div>
   </footer>
